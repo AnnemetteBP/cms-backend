@@ -1,0 +1,186 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="card section-title">
+                    <div class="card-body">
+                        <div id="wrapper">
+                            <div class="line"></div>
+                            <div class="textbox">
+                                <h1 class="text">Featured Products</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="card" id="topsellers">
+                    <div class="card-header">
+                        Top Sellers
+                    </div>
+                    <img id="topsellersImage" src="" alt="..." class="img-fluid card-img-top img-thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-text" id="topsellersName"></h5>
+                        <div class="container d-flex justify-content-between">
+                            <div class="wrapper">
+                                <div class="star-rating">
+                                    <span class="fa fa-star-o" data-rating="1"></span>
+                                    <span class="fa fa-star-o" data-rating="2"></span>
+                                    <span class="fa fa-star-o" data-rating="3"></span>
+                                    <span class="fa fa-star-o" data-rating="4"></span>
+                                    <span class="fa fa-star-o" data-rating="5"></span>
+                                    <input type="hidden" name="whatever1" class="rating-value" value="5">
+                                </div>
+                            </div>
+                            <p >Price <span id="topsellersPrice"></span> $</p>
+                        </div>
+                        <p class="card-text">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#productLeft" aria-expanded="false" aria-controls="productLeft">
+                                Show More
+                            </button>
+                        </p>
+                        <div class="collapse" id="productLeft">
+                            <div class="card card-body">
+                                <h5 class="card-text">Product Description</h5>
+                                <p class="card-text" id="topsellersDescription"></p>
+                                <div class="input-group">
+                                    <div class="container d-flex justify-content-between">
+
+                                    </div>
+                                </div>
+                                <form action="AddProductToCart" controller="Shop" method="post">
+                                    <input type="hidden" name="productID" value="" id="topsellersProductID">
+                                    <div class="input-group">
+                                        <select name="amount" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                            <option selected>Choose Amount</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <input class="btn btn-outline-secondary" type="submit" value="Add to Basket">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container">
+                <div class="card" id="highestrated">
+                    <div class="card-header">
+                        Highest Rated
+                    </div>
+                    <img id="highestratedImage" src="" alt="..." class="img-fluid card-img-top img-thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-text" id="highestratedName"></h5>
+                        <div class="container d-flex justify-content-between">
+                            <div class="star-rating">
+                                <span class="fa fa-star-o" data-rating="1"></span>
+                                <span class="fa fa-star-o" data-rating="2"></span>
+                                <span class="fa fa-star-o" data-rating="3"></span>
+                                <span class="fa fa-star-o" data-rating="4"></span>
+                                <span class="fa fa-star-o" data-rating="5"></span>
+                                <input type="hidden" name="whatever1" class="rating-value" value="5">
+                            </div>
+                            <p>Price <span id="highestratedPrice"></span> $</p>
+                        </div>
+                        <p class="card-text">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#productMiddle" aria-expanded="false" aria-controls="productMiddle">
+                                Show More
+                            </button>
+                        </p>
+                        <div class="collapse" id="productMiddle">
+                            <div class="card card-body">
+                                <h5 class="card-text">Product Specifications</h5>
+                                <p class="card-text" id="highestratedDescription"></p>
+                                <div class="input-group">
+                                    <div class="container d-flex justify-content-between">
+
+                                    </div>
+                                </div>
+                                <form action="AddProductToCart" controller="Shop" method="post">
+                                    <input type="hidden" name="productID" value="" id="highestratedProductID">
+                                    <div class="input-group">
+                                        <select name="amount" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                            <option selected>Choose Amount</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <input class="btn btn-outline-secondary" type="submit" value="Add to Basket">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container">
+                <div class="card" id="newinstock">
+                    <div class="card-header">
+                        New in Stock
+                    </div>
+                    <img id="newinstockImage" src="" alt="..." class="img-fluid card-img-top img-thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-text" id="newinstockName"></h5>
+                        <div class="container d-flex justify-content-between">
+                            <div class="star-rating">
+                                <span class="fa fa-star-o" data-rating="1"></span>
+                                <span class="fa fa-star-o" data-rating="2"></span>
+                                <span class="fa fa-star-o" data-rating="3"></span>
+                                <span class="fa fa-star-o" data-rating="4"></span>
+                                <span class="fa fa-star-o" data-rating="5"></span>
+                                <input type="hidden" name="whatever1" class="rating-value" value="5">
+                            </div>
+                            <p>Price <span id="newinstockPrice"></span> $</p>
+                        </div>
+                        <p class="card-text">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#productRight" aria-expanded="false" aria-controls="productRight">
+                                Show More
+                            </button>
+                        </p>
+                        <div class="collapse" id="productRight">
+                            <div class="card card-body">
+                                <h5 class="card-text">Product Specifications</h5>
+                                <p class="card-text" id="newinstockDescription"></p>
+                                <div class="input-group">
+                                    <div class="container d-flex justify-content-between">
+
+                                    </div>
+                                </div>
+                                <form action="AddProductToCart" controller="Shop" method="post">
+                                    <input type="hidden" name="productID" value="" id="newinstockProductID">
+                                    <div class="input-group">
+                                        <select name="amount" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                            <option selected>Choose Amount</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <input class="btn btn-outline-secondary" type="submit" value="Add to Basket">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
